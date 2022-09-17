@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../font/fontawesome-web/css/all.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head> 
+    <body>
+       
+      <nav class="navbar navbar-expand-md navbar-light bg-white sticky-top ">
+        <div class="d-flex align-items-center ">
+            <a href="#" class="navbar-brand display-2"> پنل مدیریت محتوا</a>
+            <i class="fas fa-angle-double-right mr-3 text-secondary" data-toggle="collapse" data-target="#sidebar" style="cursor: pointer;" ></i>    
+        </div>
+
+                <!------------ hamber--------------------- -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#mainmenu">
+            <span class="navbar-toggler-icon"></span>       
+        </button>
+
+
+        <div class="collapse navbar-collapse mr-3 d-md-flex justify-content-md-between" id="mainmenu">
+            <nav class="navbar-nav "> 
+                <li class="nav-item"><a href="#" class="nav-link">
+                    <i class="fas fa-tachometer-alt text-success"></i>
+                    پیشخوان
+                </a></li>
+                <li class="nav-item"><a href="#" class="nav-link">
+                    <i class="fas fa-users text-info"></i>
+                    کاربران
+                </a></li>
+                <li class="nav-item"><a href="#" class="nav-link">
+                    <i class="fas fa-cog text-danger"></i>
+                    تنظیمات
+                </a></li>
+            </nav>
+            
+            <nav class="navbar-nav align-items-center d-none d-md-flex"> 
+                <li class="nav-item dropdown"><a href="#" class="nav-link" data-toggle="dropdown">
+                    <span class="badge badge-pill badge-danger">5</span>
+                    <i class="far fa-bell"></i>
+                    <div class="dropdown-menu text-right">
+                        <div class="dropdown-header text-center bg-light text-info">شما 5 اعلان دارید</div>
+                        <a href="#" class="dropdown-item text-secondary">شما یک سفارش جدید دارید </a>
+                        <a href="#" class="dropdown-item ">یک کابر جدید وارد شد</a>
+                    </div>
+                </a></li>
+                <li class="nav-item dropdown"><a href="#" class="nav-link" data-toggle="dropdown">
+                    <span class="badge badge-pill badge-warning">8</span>
+                    <i class="fas fa-tasks"></i>
+                </a></li>
+                <li class="nav-item dropdown"><a href="#" class="nav-link" data-toggle="dropdown">
+                    <span class="badge badge-pill badge-info">12</span>
+                    <i class="far fa-comment"></i>
+                </a></li>
+                <li class="nav-item dropdown" ><a href="#" class="nav-link" data-toggle="dropdown">
+                    <img src="../user_icon_150670 (1).png" width="40" alt="">
+                </a></li>
+            </nav>
+        </div>
+
+      </nav>
+<!-- ----------------------------------navbar end------------------------------ -->
+
+      <div class="container-fluid">
+          <div class="row">
+
+              <div id="sidebar" class="col-5 col-sm-4 col-md-2 bg-dark collapse show text-right position-fixed">
+                  <ul class="nav d-flex flex-column pr-0">
+                    <li class="nav-item my-1"><a href="#submenu1" class="nav-link collapsed" data-toggle="collapse">
+                      <i class="fas fa-pen ml-2"></i>
+                      نوشته ها
+                      <i class="fas fa-chevron-left float-left"></i>
+                    </a>
+                    <div class="collapse  bg-secondary rounded " id="submenu1">
+                      <ul class="nav pr-0">
+                        <li class="nav-item"><a href="#" class="nav-link">مشاهده نوشته ها</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">افزودن نوشته</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                    <li class="nav-item my-1"><a href="#submenu2" class="nav-link collapsed" data-toggle="collapse">
+                      <i class="fas fa-shopping-cart"></i>
+                      محصولات
+                      <i class="fas fa-chevron-left float-left"></i>
+                    </a>
+                    <div class="collapse  bg-secondary rounded " id="submenu2">
+                      <ul class="nav pr-0">
+                        <li class="nav-item"><a href="#" class="nav-link">مشاهده محصولات</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">افزودن محصولات</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                    <li class="nav-item"><a href="#" class="nav-link">
+                      <i class="fas fa-comment"></i>
+                      دیدگاه ها
+                    </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">
+                      <i class="fas fa-video"></i>
+                      رسانه ها 
+                    </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">
+                      <i class="fas fa-users"></i>
+                      کاربران
+                    </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">
+                      <i class="fas fa-cog"></i>
+                      تنظیمات
+                    </a></li>
+                  </ul>
+              </div>
+<!-- -----------------------------------SIDEBAR END-------------------------------------- -->
+            <div class="col-12 col-md-10 p-4 mr-auto" id="main-content">
+
+                <div class="card-deck">
+                  <div class="card text-right text-dark mb-3 border-0 shadow bg-warning " style="max-width: 18rem;">
+                    <div class="card-body">
+                      <i class="fas fa-chart-bar float-left h5"></i>
+                      <h5 class="card-title">35000</h5>
+                      <p class="card-text"> تعداد بازدید روزانه</p>
+                      <canvas id="chart1" class="w-100" height="100"></canvas>
+                    </div>
+                  </div>
+                  <div class="card text-right text-white  mb-3 border-0 shadow bg-primary " style="max-width: 18rem;">
+                    <div class="card-body">
+                      <i class="fas fa-chart-bar float-left h5"></i>
+                      <h5 class="card-title">35000</h5>
+                      <p class="card-text"> تعداد بازدید ماهانه</p>
+                      <canvas id="chart2" class="w-100" height="100"></canvas>
+                    </div>
+                  </div>
+                  <div class="card text-right text-white  mb-3 border-0 shadow bg-danger " style="max-width: 18rem;">
+                    <div class="card-body">
+                      <i class="fas fa-chart-bar float-left h5"></i>
+                      <h5 class="card-title">35000</h5>
+                      <p class="card-text"> تعداد بازدید سالانه</p>
+                      <canvas id="chart3" class="w-100" height="100"></canvas>
+                    </div>
+                  </div>
+                  <div class="card text-right text-white  mb-3 border-0 shadow bg-success " style="max-width: 18rem;">
+                    <div class="card-body">
+                      <i class="fas fa-chart-bar float-left h5"></i>
+                      <h5 class="card-title">35000</h5>
+                      <p class="card-text"> تعداد بازدید روزانه</p>
+                      <canvas id="chart4" class="w-100" height="100"></canvas>
+                    </div>
+                  </div>
+                </div>
+<!-- -----------------------------------card deck----------------------------------------- -->
+
+                <div class="card text-right text-dark mb-3 border-0 shadow bg-white ">
+                  <div class=" card-body">
+                      <div class="d-flex mb-4 justify-content-between elign-items-center">
+                          <h5 class="card-title">امار بازدید سایت</h5>
+
+                          <div class="btn-group btn-group-toggle"  data-toggle="buttons">
+                            <label class="btn btn-outline-secondary active" for="btnradio1" >
+                              <input type="radio"  name="btnradio" id="btnradio1" autocomplete="off" checked>روز
+                            </label>
+      
+                            <label class="btn btn-outline-secondary" for="btnradio2">
+                              <input type="radio"  name="btnradio" id="btnradio2" autocomplete="off">ماه
+                            </label>
+      
+                            <label class="btn btn-outline-secondary" for="btnradio3">
+                                <input type="radio" name="btnradio" id="btnradio3" autocomplete="off">سال
+                            </label>
+                            <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="گرفتن خروجی">
+                              <i class="fas fa-file-export"></i>
+                              
+                            </button>
+                          </div>
+                      
+                      
+                      
+                      </div>
+                      <canvas id="visit" class="w-100" height="300"></canvas>
+                      <div class="card-footer">
+                        <div class="row text-center">
+                          
+                          <div class=" col-12 col-sm-6 col-md my-2 my-md-2">
+                              <strong class="text-muted">بازدید کل</strong>
+                              <p class="my-3">35000 کابر (40%)</p>
+                              <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"> 70% </div>
+                              </div>
+                          </div>
+                          <div class= "col-12 col-sm-6  col-md my-2 my-md-2">
+                              <strong class="text-muted">بازدید کل</strong>
+                              <p class="my-3">35000 کابر (40%)</p>
+                              <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"> 70% </div>
+                              </div>
+                          </div>
+                          <div class="col-12 col-sm-6  col-md my-2 my-md-2">
+                              <strong class="text-muted">بازدید کل</strong>
+                              <p class="my-3">35000 کابر (40%)</p>
+                              <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"> 70% </div>
+                              </div>
+                          </div>
+                          <div class="col-12 col-sm-6  col-md my-2 my-md-2">
+                              <strong class="text-muted">بازدید کل</strong>
+                              <p class="my-3">35000 کابر (50%)</p>
+                              <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%"> 50% </div>
+                              </div>
+                          </div>
+                      </div>
+                        
+                    </div>
+                  </div>
+                </div>
+<!-- -------------------------------------visit--------------------------------------- -->
+                <div class="card text-right text-dark my-4 border-0 shadow bg-white " >
+                  <div class="card-body">
+                    <h5 class="card-title">گزارش فروش</h5>
+
+                    <div class="tsble-responsive">
+                      <table class="table table-bordered">
+                        <thead class="th-light">
+                          <tr>
+                            <th scope="col">نام محصول</th>
+                            <th scope="col">ایمیل کابر</th>
+                            <th scope="col">درگاه پرداخت</th>
+                            <th scope="col">وضعیت</th>
+                            <th scope="col">زمان تراکنش</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">
+                              اموزش بوت استرپ 
+                            </th>
+                            <td>Mark@gmail.com</td>
+                            <td>بانک ملت</td>
+                            <td class="btn btn-success d-block shadow">تکمیل شده</td>
+                            <td>10 دقیقه پیش</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              اموزش بوت استرپ 
+                            </th>
+                            <td>Mark@gmail.com</td>
+                            <td>بانک ملت</td>
+                            <td class="btn btn-success d-block shadow">تکمیل شده</td>
+                            <td>10 دقیقه پیش</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              اموزش بوت استرپ 
+                            </th>
+                            <td>Mark@gmail.com</td>
+                            <td>بانک ملت</td>
+                            <td class="btn btn-success d-block shadow">تکمیل شده</td>
+                            <td>10 دقیقه پیش</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              اموزش بوت استرپ 
+                            </th>
+                            <td>Mark@gmail.com</td>
+                            <td>بانک ملت</td>
+                            <td class="btn btn-success d-block shadow">تکمیل شده</td>
+                            <td>10 دقیقه پیش</td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+
+
+
+                    </div>
+                  </div>
+                </div>
+
+
+            </div> 
+          </div>  <!--row-->
+      </div>      <!-- container-fluid-->
+      <script src="script.js"></script>
+      <script src="scr.js"></script>
+      <script src="chart.min.js"></script>
+
+    </body>
+</html>
